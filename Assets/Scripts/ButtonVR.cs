@@ -34,6 +34,7 @@ public class ButtonVR : MonoBehaviour
             button.transform.localPosition = new Vector3(0, 0.015f, 0);
             onRelease.Invoke();
             isPressed = false;
+            bool check = true;
         }
     }
 
