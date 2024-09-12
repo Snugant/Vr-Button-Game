@@ -10,9 +10,9 @@ public class Randomiser : MonoBehaviour
     public UnityEvent button1;
     public UnityEvent button2;
     public UnityEvent button3;    
-    public UnityEvent reset;
+
     
-    public bool guh = true;
+    public bool Check = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,38 +32,31 @@ List<T> GetRandomElements<T>(List<T> inputList, int count)
 
     // Update is called once per frame
 
-    public void reset_()
-    {
-        bool guh = true;
-    }
 
 
     public void randomiser()
     {
-        if(guh == true)
+        if(Check == true)
         {
         var randomList = GetRandomElements(list, 1);
         Debug.Log("Random elements =" + string.Join(", ", randomList));
         int randomIndex = randomList[0];
         if(randomIndex == 0)
         {
-            bool guh = false;
             button1.Invoke();
+            bool Check = false;
         }
         else if(randomIndex == 1)
         {
-            bool guh = false;           
             button2.Invoke();
+            bool Check = false;
         }
         else if(randomIndex == 2)
         {
-            bool guh = false;
             button3.Invoke();
+            bool Check = false;
         }
-        else
-        {
-            reset.Invoke();
-        }
+
         }
     }
 }
