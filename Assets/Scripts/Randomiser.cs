@@ -39,7 +39,7 @@ List<T> GetRandomElements<T>(List<T> inputList, int count)
         if(Check == true)
         {
         var randomList = GetRandomElements(list, 1);
-        Debug.Log("Random elements =" + string.Join(", ", randomList));
+//        Debug.Log("Random elements =" + string.Join(", ", randomList));
         int randomIndex = randomList[0];
         if(randomIndex == 0)
         {
