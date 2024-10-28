@@ -18,7 +18,7 @@ public class muh : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        testThingo.Invoke();
+        
     }
 
     public void RandomNumber()
