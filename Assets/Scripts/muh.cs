@@ -11,8 +11,9 @@ public class muh : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int test = Random.Range(1,4);  
-        Debug.Log(test);
+        test = Random.Range(1,4);        
+          testThingo.Invoke();
+
     }
 
     // Update is called once per frame
@@ -24,13 +25,14 @@ public class muh : MonoBehaviour
     public void RandomNumber()
     {
         int oldTest = test;          
+        
         while(test == oldTest)
         {
             int test = Random.Range(1,4);
+            
         }
         Debug.Log(test);
 
     }
-
 }
 
