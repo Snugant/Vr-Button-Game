@@ -913,6 +913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b4d56b2a02a8e4892b483c62cdb76e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonNum: 2
   material:
   - {fileID: 2100000, guid: 6a935798d4777b643a1d552b62ead721, type: 2}
   - {fileID: 2100000, guid: 1a1d7655408d2c740a53cfc207d5c02c, type: 2}
@@ -1292,6 +1293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b4d56b2a02a8e4892b483c62cdb76e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonNum: 1
   material:
   - {fileID: 2100000, guid: 6a935798d4777b643a1d552b62ead721, type: 2}
   - {fileID: 2100000, guid: 1a1d7655408d2c740a53cfc207d5c02c, type: 2}
@@ -1669,16 +1671,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc367b190aa862f4da145825403f9c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testThingo:
+  test: 0
+  delay: 1
+  ButtonChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1666436483}
-        m_TargetAssemblyTypeName: muh, Assembly-CSharp
-        m_MethodName: RandomNumber
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1965,6 +1993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b4d56b2a02a8e4892b483c62cdb76e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonNum: 3
   material:
   - {fileID: 2100000, guid: 6a935798d4777b643a1d552b62ead721, type: 2}
   - {fileID: 2100000, guid: 1a1d7655408d2c740a53cfc207d5c02c, type: 2}

@@ -7,13 +7,31 @@ public class ChangeMaterial : MonoBehaviour
     public int ButtonNum;
     public Material[] material;
     Renderer rend;
+    public GameObject Button;
+    public int Btn;
 
     // Start is called before the first frame update
     void Start()
     {
         rend = GetComponent<Renderer>();
         rend.enabled = true;
-        rend.sharedMaterial = material[0];        
+        rend.sharedMaterial = material[0];
+
+        Button = GameObject.FindGameObjectWithTag("MainButton");
+
+        if(ButtonNum == Btn)
+        {
+            rend.sharedMaterial = material[1];
+        }
+        else
+        {
+            rend.sharedMaterial = material[0];
+        }        
+    }
+
+    void Update()
+    {
+        Btn = Button.GetComponent<Randomiser>().test;
     }
 
     public void turnOn()
@@ -28,7 +46,7 @@ public class ChangeMaterial : MonoBehaviour
 
     public void SwitchSet()
     {
-        if(ButtonNum == test)
+        if(ButtonNum == Btn)
         {
             rend.sharedMaterial = material[1];
         }

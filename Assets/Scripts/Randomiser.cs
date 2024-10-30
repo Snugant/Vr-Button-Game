@@ -5,58 +5,42 @@ using UnityEngine.Events;
 
 public class Randomiser : MonoBehaviour
 {
-    List<int> list = new List<int> {0, 1, 2 };    
-    public UnityEvent startRandomiser;
-    public UnityEvent button1;
-    public UnityEvent button2;
-    public UnityEvent button3;    
+    public int test;
+    bool FunctionCalled;
+    public float delay = 1f;
+    float timer;
 
-    
-    public bool Check = true;
+    public UnityEvent ButtonChange;
+
+
     // Start is called before the first frame update
     void Start()
-    {
-        startRandomiser.Invoke();
-    }
-
-List<T> GetRandomElements<T>(List<T> inputList, int count)
-    {
-        List<T> outputList = new List<T>();
-        for (int i = 0; i < count; i++)
-        {
-            int index = Random.Range(0, inputList.Count);
-            outputList.Add(inputList[index]);
-        }
-        return outputList;
+    {     
+        test = Random.Range(1,4);
     }
 
     // Update is called once per frame
-
-
-
-    public void randomiser()
+    private void Update()
     {
-        if(Check == true)
-        {
-        var randomList = GetRandomElements(list, 1);
-//        Debug.Log("Random elements =" + string.Join(", ", randomList));
-        int randomIndex = randomList[0];
-        if(randomIndex == 0)
-        {
-            button1.Invoke();
-            bool Check = false;
-        }
-        else if(randomIndex == 1)
-        {
-            button2.Invoke();
-            bool Check = false;
-        }
-        else if(randomIndex == 2)
-        {
-            button3.Invoke();
-            bool Check = false;
-        }
+            ButtonChange.Invoke();
+            timer += Time.deltaTime;
+            if(timer > delay)
+            {
+                RandomNumber();
+                timer -= delay;
+            }
+    }
 
-        }
+    public void RandomNumber()
+    {
+        
+        int oldTest = test;          
+        
+        do
+        {
+            test = Random.Range(1,4);
+        } while(test == oldTest);
+        Debug.Log(test);
+        ButtonChange.Invoke();  
     }
 }
