@@ -5,34 +5,42 @@ using UnityEngine.Events;
 
 public class muh : MonoBehaviour
 {
-    int test;
-    public UnityEvent testThingo;
+    public int test;
+    bool FunctionCalled;
+    public float delay = 1f;
+    float timer;
+
+    public UnityEvent ButtonChange;
+
 
     // Start is called before the first frame update
     void Start()
-    {
-        test = Random.Range(1,4);        
-          testThingo.Invoke();
+    {     
 
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+            timer += Time.deltaTime;
+            if(timer > delay)
+            {
+                RandomNumber();
+                timer -= delay;
+            }
     }
 
     public void RandomNumber()
     {
         int oldTest = test;          
         
-        while(test == oldTest)
+        do
         {
-            int test = Random.Range(1,4);
-            
-        }
+            test = Random.Range(1,4);
+        } while(test == oldTest);
         Debug.Log(test);
 
     }
+
 }
 

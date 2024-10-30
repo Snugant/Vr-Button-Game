@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ChangeMaterial : MonoBehaviour
 {
+    public int ButtonNum;
     public Material[] material;
     Renderer rend;
 
@@ -24,5 +25,18 @@ public class ChangeMaterial : MonoBehaviour
     {
         rend.sharedMaterial = material[0];
     }
+
+    public void SwitchSet()
+    {
+        if(ButtonNum == test)
+        {
+            rend.sharedMaterial = material[1];
+        }
+        else
+        {
+            rend.sharedMaterial = material[0];
+        }
+    }
+
 
 }
