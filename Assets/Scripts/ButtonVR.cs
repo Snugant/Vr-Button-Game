@@ -6,14 +6,24 @@ using UnityEngine.Events;
 public class ButtonVR : MonoBehaviour
 {
     public GameObject button;
+    public GameObject ButtonMain;
     public UnityEvent onPress;
     public UnityEvent onRelease;
     GameObject presser;
     bool isPressed;
+    bool PressableButton = false;
+    public int ButtonNumber;
+    public int Btn;
 
     void Start()
     {
+        ButtonMain = GameObject.FindGameObjectWithTag("MainButton");    
         isPressed = false;
+    }
+
+    void Update()
+    {
+        Btn = ButtonMain.GetComponent<Randomiser>().RandNum;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -21,9 +31,12 @@ public class ButtonVR : MonoBehaviour
         if(!isPressed)
         {
             button.transform.localPosition = new Vector3(0, 0.003f, 0);
+            if(ButtonNumber == Btn)
+            {
             presser = other.gameObject;
             onPress.Invoke();
             isPressed = true;
+            }
         }
     }
 

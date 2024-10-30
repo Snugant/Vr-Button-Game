@@ -5,10 +5,12 @@ using UnityEngine.Events;
 
 public class Randomiser : MonoBehaviour
 {
-    public int test;
+    public int RandNum;
     bool FunctionCalled;
     public float delay = 1f;
-    float timer;
+    public float timer;
+    public int combo = 0;
+
 
     public UnityEvent ButtonChange;
 
@@ -16,7 +18,7 @@ public class Randomiser : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {     
-        test = Random.Range(1,4);
+        RandNum = Random.Range(1,4);
     }
 
     // Update is called once per frame
@@ -28,19 +30,28 @@ public class Randomiser : MonoBehaviour
             {
                 RandomNumber();
                 timer -= delay;
+                combo = 0;
             }
     }
 
     public void RandomNumber()
     {
         
-        int oldTest = test;          
+        int oldNum = RandNum;          
         
         do
         {
-            test = Random.Range(1,4);
-        } while(test == oldTest);
-        Debug.Log(test);
+            RandNum = Random.Range(1,4);
+        } while(RandNum == oldNum);
+        Debug.Log(RandNum);
         ButtonChange.Invoke();  
+    }
+
+    public void EarlyPress()
+    {
+        RandomNumber();
+        timer = 0;
+        combo += 1;
+
     }
 }

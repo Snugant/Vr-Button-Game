@@ -31,7 +31,7 @@ public class ChangeMaterial : MonoBehaviour
 
     void Update()
     {
-        Btn = Button.GetComponent<Randomiser>().test;
+        Btn = Button.GetComponent<Randomiser>().RandNum;
     }
 
     public void turnOn()
