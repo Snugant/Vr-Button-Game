@@ -385,9 +385,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ScoreCounter, Assembly-CSharp
-        m_MethodName: ScoreAdd
+      - m_Target: {fileID: 988096859}
+        m_TargetAssemblyTypeName: RaceClock, Assembly-CSharp
+        m_MethodName: ExtendTimer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -608,9 +608,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ScoreCounter, Assembly-CSharp
-        m_MethodName: ScoreAdd
+      - m_Target: {fileID: 988096859}
+        m_TargetAssemblyTypeName: RaceClock, Assembly-CSharp
+        m_MethodName: ExtendTimer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1427,9 +1427,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ScoreCounter, Assembly-CSharp
-        m_MethodName: ScoreAdd
+      - m_Target: {fileID: 988096859}
+        m_TargetAssemblyTypeName: RaceClock, Assembly-CSharp
+        m_MethodName: ExtendTimer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2008,10 +2008,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 988096854}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8af41f108de96bd45a129601593b0a84, type: 3}
+  m_Script: {fileID: 11500000, guid: b1b7a641542fa5b4695700046428821d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 60
+  timeRemaining: 10
   timerIsRunning: 0
   timeText: {fileID: 988096856}
 --- !u!1 &999400186
@@ -2267,9 +2267,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ScoreCounter, Assembly-CSharp
-        m_MethodName: ScoreAdd
+      - m_Target: {fileID: 988096859}
+        m_TargetAssemblyTypeName: RaceClock, Assembly-CSharp
+        m_MethodName: ExtendTimer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3232,9 +3232,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ScoreCounter, Assembly-CSharp
-        m_MethodName: ScoreAdd
+      - m_Target: {fileID: 988096859}
+        m_TargetAssemblyTypeName: RaceClock, Assembly-CSharp
+        m_MethodName: ExtendTimer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3372,9 +3372,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ScoreCounter, Assembly-CSharp
-        m_MethodName: ScoreAdd
+      - m_Target: {fileID: 988096859}
+        m_TargetAssemblyTypeName: RaceClock, Assembly-CSharp
+        m_MethodName: ExtendTimer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4097,9 +4097,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ScoreCounter, Assembly-CSharp
-        m_MethodName: ScoreAdd
+      - m_Target: {fileID: 988096859}
+        m_TargetAssemblyTypeName: RaceClock, Assembly-CSharp
+        m_MethodName: ExtendTimer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4377,9 +4377,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ScoreCounter, Assembly-CSharp
-        m_MethodName: ScoreAdd
+      - m_Target: {fileID: 988096859}
+        m_TargetAssemblyTypeName: RaceClock, Assembly-CSharp
+        m_MethodName: ExtendTimer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4861,9 +4861,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ScoreCounter, Assembly-CSharp
-        m_MethodName: ScoreAdd
+      - m_Target: {fileID: 988096859}
+        m_TargetAssemblyTypeName: RaceClock, Assembly-CSharp
+        m_MethodName: ExtendTimer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
