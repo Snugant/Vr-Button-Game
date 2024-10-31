@@ -6,7 +6,6 @@ using UnityEngine.Events;
 public class Randomiser : MonoBehaviour
 {
     public int RandNum;
-    bool FunctionCalled;
     public float delay = 1f;
     public float timer;
     public int combo = 0;
@@ -18,7 +17,7 @@ public class Randomiser : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {     
-        RandNum = Random.Range(1,4);
+        RandNum = Random.Range(1,10);
     }
 
     // Update is called once per frame
@@ -41,7 +40,7 @@ public class Randomiser : MonoBehaviour
         
         do
         {
-            RandNum = Random.Range(1,4);
+            RandNum = Random.Range(1,11);
         } while(RandNum == oldNum);
         Debug.Log(RandNum);
         ButtonChange.Invoke();  
